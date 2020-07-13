@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Elise Schatzki-McClain
+        2/10/2020
+        CSC 220
+        HW2
+        Sources:I used this website to find information about html tables and their various functions in javascript
+        https://www.w3schools.com/jsref/dom_obj_table.asp
+    -->
+        
+        <font size="+2">The Top 5 Ice Cream Places in United States</font>
+        <!--This changes the font to make it larger-->
+       
+    </head>
+    <body>
+
+
+        <table id = "IcecreamTable" style="width:50%"> <!--this ids the table and formats it-->
+           
+            <tr>
+              <!--this is the column titles in the table-->
+              <th>Icecream Place</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Best Flavor</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <!--this is the inofmration for a single ice cream place-->
+              <td>Fat Cat Creamery</td>
+              <td>Houston</td>
+              <td>TX</td>
+              <td>Strawberry Jam</td>
+              <td><select id="rating1"> <!--this allows th euser to choose their rating-->
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select> </td>
+            </tr>
+            <tr>
+               <!--this is the inofmration for a single ice cream place-->
+              <td>Crank & Boom Ice Cream Lounge</td>
+              <td>Lexington</td>
+              <td>KY</td>
+              <td>Blueberry Cheesecake</td>
+              <td><select id="rating2"> <!--this allows th euser to choose their rating-->
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select> </td>
+            </tr>
+            <tr>
+               <!--this is the inofmration for a single ice cream place-->
+                <td>Creole Creamery</td>
+                <td>New Orleans</td>
+                <td>LA</td>
+                <td>Mission Fig</td>
+                <td><select id="rating3"> <!--this allows th euser to choose their rating-->
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                </select> </td>
+            </tr>
+              <tr>
+               <!--this is the inofmration for a single ice cream place-->
+                <td>The Bent Spood</td>
+                <td>Princeton</td>
+                <td>NJ</td>
+                <td>Pumpkin</td>
+                <td><select id="rating4"> <!--this allows th euser to choose their rating-->
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                </select> </td>
+              </tr>
+              <tr>
+               <!--this is the inofmration for a single ice cream place-->
+                <td>Bi-Rite Creamery</td>
+                <td>San Francisco</td>
+                <td>CA</td>
+                <td>Honey Lavender</td>
+                <td><select id="rating5"> <!--this allows th euser to choose their rating-->
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                </select> </td>
+              </tr>
+
+
+         <br /> <button id="color button1"> I approve of this list </button> <br><br>
+         <!--if the user presses on this button, it will highlight table and say approve of list-->
+
+        <button id="color button2"> I do not approve of this list </button> <br><br>
+        <!--if the user presses on this button, it will highlight table and say not approve of list-->
+
+          <label for="remove ranking">Rank of row to remove</label>  <!--this is the label for the row to be removed-->
+          <select id="remove ranking">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <!--this is the options to choose from to remove row-->
+        </select>
+
+        <button id="remove button"> Remove you least favorite icecream place </button> <br><br>
+        <!--if user presses this button, the selected row will be removed fromt he graph-->
+        
+        <label>Place</label> <!--this asks the user to input their favorite ice cream place name-->
+          <input type = "text"
+                 id = "myplaceText"
+                 value = "place here" />
+        
+        <label>City</label> <!--this asks the user to input their favorite ice cream place city-->
+          <input type = "text"
+                 id = "mycityText"
+                 value = "city here" />
+
+        <label>State</label> <!--this asks the user to input their favorite ice cream place state-->
+          <input type = "text"
+                 id = "mystateText"
+                 value = "state here" />
+
+        <label>Flavor</label> <!--this asks the user to input their favorite ice cream place flavor-->
+          <input type = "text"
+                 id = "myflavorText"
+                 value = "flavor here" />
+                
+        <button id="addIPinfo">Add the Information of your favorite ice cream place</button> <br><br>
+        <!--this button if pressed would put all the inputed information in the graph-->
+ 
+        <script src="js\besticecream.js"></script> <!--connects the javascript besticecream file to the html file-->
+
+    </table id = "IcecreamTable"> <!--identifying the table-->
+    </body>
+</html>
